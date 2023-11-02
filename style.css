@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Michroma&family=Roboto&family=Rubik:wght@400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0px;
+    gap: 1em;
+}
+
+/* Layout */
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
+.newsletter-image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+.right-subscribe {
+    order: 1;
+}
+
+.left-subscribe {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 2em;
+}
+
+.success-container {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+.confirm-image {
+    width: 3.5em;
+}
+
+
+
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    margin: 0px;
+    list-style: none;
+}
+
+.subscribe-email-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.emailDenied {
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    border-image: initial;
+}
+.subscribe-email-input, .subscribe-btn {
+    height: 40px;
+    border-radius: 5px;
+}
+
+.subscribe-btn {
+    width: 100%;
+    background-color: rgb(36, 39, 66);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus{
+    background-color: hsl(4, 100%, 67%) ;
+    transition: 0.5s ease-in;
+}
+.subscribe-email-input {
+    text-indent: 1em;
+    cursor: pointer;
+    outline: none;
+    border-width: 1px;
+    border-color: rgb(212, 209, 209);
+    
+}
+.subscribe-email-input:hover,
+.subscribe-email-input:focus{
+    transition: 0.5s ease-in;
+    border-bottom: 1px solid black;
+}
+
+.btnDisabled {
+    background-color: grey;
+    cursor: none;
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+}
+
+.success-container {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+
+/* Typography */
+h1 {
+    margin-top: 2em;
+}
+
+.email-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.email-label span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: red;
+}
+
+.offer > p {
+    margin-top: 0.75em;
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+
+@media (min-width:675px){
+    body{
+        height: 100vh;
+        justify-content: center;
+    }
+    .container{
+        flex-direction: row;
+        align-items: center;
+        max-width: 1000px;
+    }
+
+    .right-subscribe{
+        order: 2;
+    }
+    .left-subscribe{
+        order: 1;
+    }
+
+}
